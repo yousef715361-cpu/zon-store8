@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#0b63f6">
+<title>ZON | متجر زون</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">✨ عروض مميزة يوميًا • تسوق بذكاء مع ZON</div>
+<header class="header zon-header"><div class="header-side header-right"><button id="cartBtn" class="icon-action cart"><span class="icon">🛒</span><span>السلة</span><b id="cartCount">0</b></button><button id="favoritesBtn" class="icon-action favorites-action"><span class="icon">♡</span><span>المفضلة</span><b id="favoritesCount">0</b></button></div><a class="brand zon-brand" href="#home"><img src="assets/zon-mascot.png" alt="ZON متجر زون"><span>زون<small>ZONE Store</small></span></a><div class="header-side header-left"><button id="loginBtn" class="icon-action"><span class="icon">♙</span><span>تسجيل الدخول</span></button></div></header>
+<nav class="nav zon-nav"><a class="active" href="#home">الرئيسية</a><a href="#categories">الأقسام</a><a href="#products">المنتجات</a><a href="#offers">العروض</a><a href="#support">الدعم الذكي</a><a href="#aboutModal" id="aboutLink">عن ZON</a></nav><div class="search zon-search"><span>⌕</span><input id="searchInput" placeholder="ابحث عن منتج، قسم أو عرض..."></div>
+
+<main id="home">
+<section class="hero zon-hero"><div class="hero-copy"><span class="eyebrow hero-eyebrow">✨ عروض مميزة يوميًا</span><h1>اكتشف أفضل المنتجات<br><span>بأسعار مميزة</span></h1><p>منتجات متنوعة من SHEIN، اختيارات جديدة وعروض تتجدد باستمرار — كل شيء مرتب لك في ZON.</p><div class="hero-actions"><a class="btn primary" href="#products">تسوق الآن</a><a class="btn light" href="#categories">استكشف الأقسام</a></div><div class="trust"><span>✓ منتجات متنوعة</span><span>✓ عروض يومية</span><span>✓ دعم ذكي</span></div></div><div class="hero-visual zon-hero-visual"><div class="hero-badge">خصومات حتى<br><strong>35%</strong></div><img src="assets/zon-mascot.png" alt="زون"></div></section>
+
+<section id="categories" class="section">
+ <div class="heading"><div><span class="eyebrow">اكتشف</span><h2>الأقسام</h2><p>اختر القسم الذي يناسبك وابدأ التصفح.</p></div></div>
+ <div class="categories zon-categories"><button data-cat="الكل" class="cat active"><i>✦</i><b>عرض الكل</b><small>+96 منتج</small></button><button data-cat="أزياء" class="cat"><i>👕</i><b>الأزياء</b><small>+28 منتج</small></button><button data-cat="إلكترونيات" class="cat"><i>🎧</i><b>الإلكترونيات</b><small>+12 منتج</small></button><button data-cat="منزل" class="cat"><i>⌂</i><b>المنزل والمطبخ</b><small>+12 منتج</small></button><button data-cat="جمال" class="cat"><i>✿</i><b>الجمال والعناية</b><small>+12 منتج</small></button><button data-cat="إكسسوارات" class="cat"><i>⌚</i><b>الإكسسوارات</b><small>+12 منتج</small></button><button data-cat="أطفال" class="cat"><i>🧸</i><b>الأطفال</b><small>+10 منتجات</small></button><button data-cat="مكتبية" class="cat"><i>✎</i><b>المكتبية</b><small>+10 منتجات</small></button></div>
+</section>
+
+<section id="products" class="section">
+ <div class="heading row"><div><span class="eyebrow">ZON PICKS</span><h2>منتجات مختارة لك</h2><p>تشكيلة كبيرة ومتنوعة — اختر أي قسم لتظهر لك منتجاته مباشرة.</p></div><span id="resultCount" class="count"></span></div>
+ <div id="productsGrid" class="products"></div>
+</section>
+
+<section id="offers" class="offer">
+ <div><span class="eyebrow white">عرض ZON</span><h2>لا تفوّت العروض 🔥</h2><p>استكشف المنتجات والعروض التي نختارها لك باستمرار.</p><a class="btn white-btn" href="#products">شاهد العروض</a></div>
+ <div class="offer-bubble">خصومات<br><strong>تتجدد</strong></div>
+</section>
+
+<section class="shein section">
+ <div><span class="eyebrow">SHEIN</span><h2>المزيد من المنتجات عبر SHEIN</h2><p>انسخ الكود وابحث عنه داخل SHEIN للاستفادة من المنتجات والعروض.</p>
+ <div class="coupon" id="coupon">X6YSTAN</div><button id="copyCoupon" class="btn primary">نسخ الكود</button><small>للمزيد من المنتجات: ابحث عن <b>X6YSTAN</b> في SHEIN.</small></div>
+</section>
+
+<section id="support" class="section support">
+ <div class="ai-mini">
+  <div><span class="eyebrow">ZON AI</span><h2>الدعم الذكي</h2><p>مساعدة سريعة بدون ما يأخذ مساحة من الصفحة.</p></div>
+  <button id="openAI" class="ai-open">✦ افتح المساعد</button>
+ </div>
+ <div class="contact-strip"><div><b>تحتاج مساعدة مباشرة؟</b><span>تواصل معنا على الرقم المخصص للدعم</span></div><a href="tel:+966534612913">053 461 2913</a></div>
+</section>
+
+<section class="section about-teaser"><div class="about-teaser-card zon-about-card"><img src="assets/zon-mascot.png" alt="زون"><div><span class="eyebrow">ABOUT ZON</span><h2>عن ZON</h2><p>زون هو متجرك الذكي لاكتشاف المنتجات والعروض في مكان واحد، بتجربة سهلة وسريعة تناسب الجوال.</p><button id="openAbout" class="btn primary">المزيد عن زون</button></div></div></section>
+</main>
+
+<footer><img src="assets/logo.svg" alt="ZON"><p>متجر زون — اختياراتك تبدأ هنا.</p><div class="footer-links"><a href="#home">الرئيسية</a><a href="#categories">الأقسام</a><a href="#products">المنتجات</a><a href="#support">الدعم الذكي</a><a href="https://www.instagram.com/zone67759" target="_blank">Instagram</a></div>
+<div class="footer-contact">☎️ <a href="tel:+966534612913">053 461 2913</a></div><small>© 2026 ZON — جميع الحقوق محفوظة</small></footer>
+
+<div id="aiModal" class="modal"><div class="modal-box ai-modal-box">
+ <button class="close" data-close="aiModal">×</button>
+ <div class="ai-head"><div class="ai-avatar">✦</div><div><span class="eyebrow">ZON AI</span><h2>مساعد زون الذكي</h2><p>اسأل عن المنتجات أو الأقسام أو التواصل.</p></div><span class="online">● متصل</span></div>
+ <div id="chat" class="chat"><div class="msg bot">مرحبًا بك في ZON 👋 كيف أقدر أساعدك؟</div></div>
+ <div class="quick"><button data-q="أريد معرفة الأقسام">الأقسام</button><button data-q="أريد منتجًا مميزًا">منتج مميز</button><button data-q="كيف أتواصل معكم؟">التواصل</button></div>
+ <div class="chat-input"><input id="chatInput" placeholder="اكتب سؤالك هنا..."><button id="sendChat">إرسال</button></div>
+
+ </div></div>
+
+<div id="loginModal" class="modal"><div class="modal-box">
+ <button class="close" data-close="loginModal">×</button>
+ <div id="authForm">
+  <div class="modal-logo">👤</div><h2 id="authTitle">تسجيل الدخول</h2><p id="authSub">ادخل إلى حسابك في ZON</p>
+  <input id="authName" class="optional" placeholder="الاسم" style="display:none"><input id="authEmail" type="email" placeholder="البريد الإلكتروني"><input id="authPass" type="password" placeholder="كلمة المرور">
+  <button id="authSubmit" class="btn primary full">تسجيل الدخول</button><button id="toggleAuth" class="switch">إنشاء حساب جديد</button><div id="authMsg"></div>
+ </div>
+ <div id="accountView" class="account-view" style="display:none">
+  <div class="account-avatar">✓</div><span class="eyebrow">ZON ACCOUNT</span><h2>أهلًا بك في زون 👋</h2>
+  <p id="accountWelcome">تم تسجيل دخولك بنجاح.</p>
+  <div class="account-cards"><div><b>🛒</b><span>سلة مشترياتك</span></div><div><b>⭐</b><span>اختياراتك</span></div><div><b>🚚</b><span>طلباتك</span></div></div>
+  <button id="logoutBtn" class="btn light full">تسجيل الخروج</button>
+ </div>
+</div></div>
+
+<div id="favoritesModal" class="modal"><div class="modal-box cart-box"><button class="close" data-close="favoritesModal">×</button><div class="modal-logo">♡</div><h2>المفضلة</h2><p>المنتجات التي اخترتها للرجوع إليها لاحقًا.</p><div id="favoriteItems"></div></div></div>
+
+<div id="cartModal" class="modal"><div class="modal-box cart-box"><button class="close" data-close="cartModal">×</button><div class="modal-logo">🛒</div><h2>سلة المشتريات</h2><div id="cartItems"></div><div class="total">الإجمالي <strong id="cartTotal">$0.00</strong></div><a class="btn primary full shein-checkout" href="https://www.shein.com/" target="_blank" rel="noopener">🛍️ إتمام الطلب عبر SHEIN</a>
+<div class="checkout-note">سيتم تحويلك إلى SHEIN لإتمام الشراء. استخدم كود ZON: <b>X6YSTAN</b></div></div></div>
+
+<div id="aboutModal" class="modal"><div class="modal-box about-modal-box">
+ <button class="close" data-close="aboutModal">×</button>
+ <div class="about-hero"><div class="about-logo-mark">Z</div><div><span class="eyebrow">ABOUT ZON</span><h2>عن زون</h2><p>اكتشف أكثر عن فكرة المتجر ورؤيتنا.</p></div></div>
+ <div class="about-copy">
+  <h3>✨ من نحن؟</h3><p><b>زون | ZON</b> هو متجر إلكتروني يسهّل عليك اكتشاف المنتجات والعروض المميزة من المتاجر والمنصات العالمية، في مكان واحد وبطريقة مرتبة وسهلة.</p>
+  <h3>🛍️ ماذا يقدم زون؟</h3><ul><li>منتجات متنوعة في الأزياء، الإكسسوارات، المنزل، الجمال، الإلكترونيات وغيرها.</li><li>أقسام مرتبة تساعدك على الوصول للمنتج بسرعة.</li><li>تشكيلة متجددة من المنتجات والعروض المختارة.</li><li>إتمام الشراء من SHEIN مع إمكانية استخدام كود ZON: <b>X6YSTAN</b>.</li><li>دعم ذكي ومعلومات واضحة لمساعدتك أثناء التصفح.</li></ul>
+  <h3>💙 رؤيتنا</h3><p>هدف <b>ZON</b> أن يكون مكانًا بسيطًا ومميزًا لاكتشاف المنتجات والعروض، بدل ما تضيع وقتك في البحث بين عدد كبير من المنتجات.</p>
+  <div class="about-slogan">ZON — اكتشف أكثر، اختر أسهل.</div>
+ </div>
+</div></div>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body></html>
